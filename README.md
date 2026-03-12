@@ -157,10 +157,10 @@ Converted analytical findings into **business insights for healthcare executives
 | Column | Purpose | Formula |
 |------|------|------|
 | Age Group | Categorize patients into demographic groups | `=IF([Age]<19,"0–18",IF([Age]<36,"19–35",IF([Age]<51,"36–50",IF([Age]<66,"51–65","66+"))))` |
-| Length of Stay | Calculate hospital stay duration | `=[Discharge Date]-[Admission Date]` |
-| Admission Month | Extract month for time analysis | `=TEXT([Admission Date],"mmm-yyyy")` |
-| Billing Validation | Detect missing billing values | `=IF([Billing Amount]="","Check Billing","OK")` |
-| LOS Validation | Detect incorrect stay calculations | `=IF([Length of Stay]<0,"Check Dates","OK")` |
+| Length of Stay | Calculate hospital stay duration | `=IFERROR([@[Discharge Date]]-[@[Date of Admission]],"NA")` |
+| Admission Month | Extract month for time analysis | `=TEXT([@[Date of Admission]],"mmm-yyyy")` |
+| Billing Validation | Detect missing billing values | `=IF([@[Billing Amount]]="","Check Billing","OK")` |
+| LOS Validation | Detect incorrect stay calculations | `=IF([@[Length of Stay (Days)]]<0,"Check Dates",IF([@[Length of Stay (Days)]]="","Missing Date","OK"))` |
 
 ---
 

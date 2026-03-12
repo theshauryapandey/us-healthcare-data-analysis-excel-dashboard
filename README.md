@@ -86,7 +86,7 @@ The dataset contains healthcare records from **100 hospitals in the US healthcar
 | KPI | Value |
 |------|------|
 | 👥 Total Patients | 10,000 |
-| 💰 Average Billing Amount | $23,388.57 |
+| 💰 Average Billing Amount | 23,388.57 |
 | 🏥 Average Length of Stay | 13.82 Days |
 | 🚑 Emergency Admission Rate | 35.87% |
 | ⚕️ Most Common Condition | Hypertension |

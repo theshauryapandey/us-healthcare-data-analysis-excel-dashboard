@@ -148,7 +148,7 @@ Converted analytical findings into **business insights for healthcare executives
 
 # 📸 Dashboard Preview
 
-<img src="dashboard.png" width="900">
+<img src="Dashboard.JPG" width="900">
 
 ---
 
@@ -221,9 +221,9 @@ Provides healthcare leaders with **clear operational insights**.
 ```
 Healthcare-Data-Analytics-Dashboard
 │
-├── US-Healthcare-Data-Analysis-Excel-Dashboard.xlsx
-├── dashboard.png
-└── README.md
+├── Dashboard.JPG
+├── README.md
+└── US-Healthcare-Data-Analysis-Excel-Dashboard.xlsx
 ```
 
 ---
